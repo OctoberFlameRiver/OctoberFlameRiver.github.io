@@ -3,7 +3,7 @@ const workboxVersion = '5.1.3';
 importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
 
 workbox.core.setCacheNameDetails({
-    prefix: "OFR"
+    prefix: "octoberflameriver.com"
 });
 
 workbox.core.skipWaiting();
@@ -12,7 +12,7 @@ workbox.core.clientsClaim();
 
 // 注册成功后要立即缓存的资源列表
 // 具体缓存列表在gulpfile.js中配置，见下文
-workbox.precaching.precacheAndRoute([{"revision":"edb7db60fd00bcc0d17707486f97c1bd","url":"./404.html"},{"revision":"e2beba9937da59ac1c7bee62cff3c011","url":"./index.html"},{"revision":"c2d6628801fd2dc0ea1739901cf5d99b","url":"./js/main.js"},{"revision":"29815f8f877e9f8195cf33d661375baf","url":"./css/index.css"}],{
+workbox.precaching.precacheAndRoute([{"revision":"2dbe4952b4837388569d824bdcdd81bb","url":"./404.html"},{"revision":"2d6b400d841397673d3925fe8587084d","url":"./index.html"},{"revision":"c2d6628801fd2dc0ea1739901cf5d99b","url":"./js/main.js"},{"revision":"2206ff84e6550aefdff06177f434ef14","url":"./css/index.css"}],{
     directoryIndex: null
 });
 
